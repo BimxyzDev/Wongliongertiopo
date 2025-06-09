@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selamat Ulang Tahun</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://files.catbox.moe/xmxn5v.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      text-align: center;
+      backdrop-filter: blur(3px);
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 50px 20px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 1.5em;
+      line-height: 1.6;
+    }
+    .signature {
+      font-style: italic;
+      margin-top: 2em;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #ff85c1;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>🎉 Selamat Ulang Tahun 🎉</h1>
+    <p>
+      Semoga harimu dipenuhi dengan senyum tulus, ketenangan hati, dan harapan-harapan baru yang tercapai.
+      <br><br>
+      Aku tahu aku bukan siapa-siapa, tapi izinkan aku tetap mendoakan yang terbaik untuk kamu dari jauh.
+    </p>
+    <p class="signature">— seseorang yang diam-diam kagum...</p>
+    <button onclick="playAudio()">🎵 Putar Musik</button>
+  </div>
+
+  <audio id="bgm" src="https://files.catbox.moe/tcfy2p.mp3" loop></audio>
+
+  <script>
+    function playAudio() {
+      document.getElementById('bgm').play();
+    }
+  </script>
+</body>
+</html>
